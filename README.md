@@ -38,14 +38,23 @@ __is_valid_numbers
 Методы __is_valid_vin и __is_valid_numbers должны вызываться и при создании объекта (в __init__ при объявлении атрибутов __vin и __numbers).
 
 Пример результата выполнения программы:
+
 Пример выполняемого кода:
+
 try:
+  
   first = Car('Model1', 1000000, 'f123dj')
+
 except IncorrectVinNumber as exc:
+ 
   print(exc.message)
+
 except IncorrectCarNumbers as exc:
+  
   print(exc.message)
+
 else:
+  
   print(f'{first.model} успешно создан')
 
 try:
