@@ -57,6 +57,7 @@ else:
   
   print(f'{first.model} успешно создан')
 
+
 try:
   
   second = Car('Model2', 300, 'т001тр')
@@ -71,6 +72,7 @@ except IncorrectCarNumbers as exc:
 else:
   
   print(f'{second.model} успешно создан')
+
 
 try:
   
@@ -87,6 +89,7 @@ except IncorrectCarNumbers as exc:
 else:
  
   print(f'{third.model} успешно создан')
+
 
 Вывод на консоль:
 
